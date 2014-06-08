@@ -1,3 +1,15 @@
+### WEB
+* [Port scan](http://tool.chinaz.com/port/)
+* [C scan](http://c.wlan.im/)
+* [exploitsearch](http://exploitsearch.net/dashboard)
+
+### MD5
+* <http://www.md5.asia/>
+* <http://somd5.com/>
+* <http://cracker.blackbap.org/>
+* <http://www.md5.com.cn/md5>
+* <http://www.md5this.com/>
+
 ### Code review
 
 * [Source Code Analysis Tools](https://www.owasp.org/index.php/Source_Code_Analysis_Tools)
