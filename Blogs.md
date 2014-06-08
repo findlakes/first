@@ -21,6 +21,7 @@
 * [Rice's Blog](http://rices.so/)
 * [shellsec](http://www.shellsec.com/)
 * [oldjun](http://www.oldjun.com/)
+* [linuxpad](http://www.linuxpad.cn/)
 
 
 ### Org
@@ -35,3 +36,11 @@
 * [邪恶八进制](http://forum.eviloctal.com/)
 * [CST](http://bbs.0xcode.org/forum.php)
 * [红客联盟](http://www.cnhonkerarmy.com/forum.php)
+* [黑客防线](http://www.hacker.com.cn/)
+* [HK共享吧](http://www.mfhk8.com/forum.php)
+* [小七](http://www.xiaoqi7.com/)
+* [日月神教](http://bbs.ry-sj.com/)
+* [中国黑客联盟](http://www.chinahacker.com/)
+* [被黑统计](http://www.zone-h.com.cn/)
+* [红黑联盟](http://www.2cto.com/)
+* [黑客榜](http://www.cn-hack.cn/)
