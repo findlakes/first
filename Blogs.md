@@ -13,6 +13,25 @@
 * [guya](http://blog.guya.net/)
 * [riyazwalikar](http://www.riyazwalikar.com/)
 * [detectify](http://blog.detectify.com/)
+* [BugZone](www.pulog.org)
+* [Morker's Blog](http://www.morker.net/)
+* [darksn0w](http://darksn0w.diandian.com/)
+* [Any's Blog](http://hi.baidu.com/new/recboot)
+* [iick's blog](http://www.hack1990.com/)
+* [Rice's Blog](http://rices.so/)
+* [shellsec](http://www.shellsec.com/)
+* [oldjun](http://www.oldjun.com/)
+
+
+### Org
+
 * [Silic](http://bbs.blackbap.org/forum.php)
 * [中国灰客联盟](http://www.92huike.com/)
 * [icehack](http://icehack.com/forum.php)
+* [kuxoo](http://kuxoo.com/)
+* [菜鸟腾飞安全网](http://www.cainiaotengfei.com/)
+* [中国黑帽安全小组](http://www.bhst.org/)
+* [08sec](http://www.08sec.com/forum.php)
+* [邪恶八进制](http://forum.eviloctal.com/)
+* [CST](http://bbs.0xcode.org/forum.php)
+* [红客联盟](http://www.cnhonkerarmy.com/forum.php)
