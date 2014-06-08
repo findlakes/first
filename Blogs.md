@@ -44,3 +44,4 @@
 * [被黑统计](http://www.zone-h.com.cn/)
 * [红黑联盟](http://www.2cto.com/)
 * [黑客榜](http://www.cn-hack.cn/)
+* [soldierx](https://www.soldierx.com)
