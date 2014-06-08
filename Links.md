@@ -9,6 +9,7 @@
 * [PHP挖洞详细分析](http://www.cnseay.com/384/)
 * [溜客顶级脚本ASP0day挖掘及代码防御系列教程](http://hi.baidu.com/sy64_bing/item/7ba44f8656cfda51850fab2e)
 * [xCAT和TORQUE动态服务器供应](http://www.ibm.com/developerworks/cn/opensource/os-xcat-torque/)
+* [MySQL SQL Injection Cheat Sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)
 
 ### 安全平台
 
