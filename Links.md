@@ -49,5 +49,7 @@
 ### Others
 
 * [36氪](http://www.36kr.com/)
+* [speakerdeck](https://speakerdeck.com/)
+* [slideshare](http://www.slideshare.net/)
 
 ### Footer By Anjkz.
