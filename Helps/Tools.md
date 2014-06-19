@@ -22,3 +22,4 @@
 * [Sitedossier](http://www.sitedossier.com/parentdomain/huawei.com)
 * [SHODAN](http://www.shodanhq.com/)
 * [阿里测](http://alibench.com/)
+* [一起测-网速](http://www.17ce.com/)
