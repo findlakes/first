@@ -19,6 +19,7 @@
 * [Linux日志管理](http://os.51cto.com/art/200712/61498.htm)
 * [linux入侵痕迹隐藏](http://security.zdnet.com.cn/security_zone/2008/1124/1250044.shtml)
 * [使用 Web 服务器日志](http://www.ibm.com/developerworks/cn/web/wa-apachelogs/)
+* [Waf实现扫描器识别 彻底抵挡黑客扫描](http://www.cnseay.com/3469/)
 
 ### 安全平台
 
