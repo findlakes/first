@@ -20,15 +20,8 @@
 * [linux入侵痕迹隐藏](http://security.zdnet.com.cn/security_zone/2008/1124/1250044.shtml)
 * [使用 Web 服务器日志](http://www.ibm.com/developerworks/cn/web/wa-apachelogs/)
 * [Waf实现扫描器识别 彻底抵挡黑客扫描](http://www.cnseay.com/3469/)
-
-
-### 开发开发
-
-* [Mozilla开发者](https://developer.mozilla.org/zh-CN/)
-* [Oschina](http://www.oschina.net/)
-* [Python27 Tutorial](https://docs.python.org/2.7/tutorial/)
-* [Lua简明教程](http://coolshell.cn/articles/10739.html)
-
+* [Sqlmap Tricks for Advanced SQL Injection](http://blog.spiderlabs.com/2013/12/sqlmap-tricks-for-advanced-sql-injection.html)
+* [Fierce Domain Scan](http://ha.ckers.org/fierce/)
 
 ### Others
 
