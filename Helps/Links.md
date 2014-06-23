@@ -21,19 +21,6 @@
 * [使用 Web 服务器日志](http://www.ibm.com/developerworks/cn/web/wa-apachelogs/)
 * [Waf实现扫描器识别 彻底抵挡黑客扫描](http://www.cnseay.com/3469/)
 
-### 安全平台
-
-* [Freebuf](http://www.freebuf.com/)
-* [WooYun](http://wooyun.org/)
-* [WooYun白帽社区](http://zone.wooyun.org/)
-* [阿里安全中心](http://security.alibaba.com/)
-* [腾讯安全中心](http://security.tencent.com/)
-* [360库带计划](http://loudong.360.cn/)
-* [SebugRepo](http://sebug.net/paper/)
-* [Exploits-DB](http://www.exploit-db.com/)
-* [BugFuzz](http://bugfuzz.com/)
-* [HackOne](https://hackerone.com/)
-* [Sobug](https://www.sobug.com)
 
 ### 开发开发
 
