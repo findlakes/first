@@ -3,7 +3,7 @@ require 'pp'
 require 'net/http'
 # Get links from a web page 
 
-webpage = 'http://www.baidu.com'
+webpage = 'http://www.chinadegree.cn/'
 #webpage = 'http://www.hao123.com'
 
 begin
