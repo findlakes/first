@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: HelloWorldApp
+Created-By: 1.2.2(sun Microsystems Inc.):
