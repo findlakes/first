@@ -3,8 +3,9 @@ class Exploit_1 < FastExp
 
   def initialize
     @exp_id = 1
+    @exp_name = "Teste Demo"
     @exp_type = "URL"
-    @exp_txt = "test exp get title"
+    @exp_txt = "Test exp get title"
     @pattern = /<title>.*<\/title>/
     @match = ""
     @found = false
@@ -12,7 +13,7 @@ class Exploit_1 < FastExp
 
   def exp(type, arg)
     type.include?(@exp_type)
-    html = HTTP.get("http://"+arg+"/").to_s
+    html = HTTP.get("http://"+arg+"/index.php").to_s
     @match = @pattern.match html
     @found = true if @match != nil
   end

@@ -6,8 +6,8 @@ class Exploit_4 < FastExp
     @exp_type = "URL"
     @exp_txt = "discuz7.2 faq.php sql"
     @pattern = /.*c4ca4238a0b923820dcc509a6f75849b1.*/
-    #@match = ""
-    #@found = false
+    @match = ""
+    @found = false
   end
 
   def exp(type, arg)

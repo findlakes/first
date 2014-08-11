@@ -1,4 +1,3 @@
-require 'logger'
 
 class FastExp
 
@@ -6,6 +5,7 @@ class FastExp
 
   def initialize()
     @exp_id = 0
+    @exp_name = ""
     @exp_type = ""
     @exp_txt = ""
     @pattern = //
@@ -21,8 +21,19 @@ class FastExp
     @found
   end
 
+  def to_json
+    {
+    "exp_id"=>@exp_id,
+    "exp_name"=>@exp_name,
+    "exp_txt"=>@exp_txt,
+    "pattern"=>@pattern,
+    "match"=>@match,
+    "found"=>@found
+    }.to_json
+  end
+
   def to_s
-    "{\n exp_id: #{@exp_id}, \n exp_type: #{@exp_type}\n exp_txt: #{@exp_txt},\n pattern: #{@pattern},\n match: #{@match},\n found: #{@found}  \n}"
+    to_json
   end
 
 end

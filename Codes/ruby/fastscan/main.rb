@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+require 'logger'
+require 'json'
+require 'resolv'
+require 'pp'
 #gem install http
 require "http"
 require 'thread'
@@ -7,9 +11,10 @@ require File.absolute_path('./lib/FastCfg.rb')
 require File.absolute_path('./lib/FastExp.rb')
 
 # exploit type
-exp_type = ["URL"]
+#exp_type = ["URL","DIR"]
+exp_type = ["URL","HOST","DIR"]
 # exploits script
-exploits = Dir["./exploits/*.rb"]
+exploits = Dir["./exp/*.rb"]
 
 # load exploits
 exploits.each do |exp|
@@ -28,10 +33,12 @@ FastCfg.list.each do |item|
 end
 =end
 
+domain = "www.fastweb.com.cn"
 # test exp 2
 #domain = "www.discuz.net"
 # test exp 3
-domain = "www.ytjt.com.cn"
+#domain = "www.ytjt.com.cn"
+#domain = "test.jdyt.cn"
 # test exp 4 
 #domain = "www.zhhsw.com"
 # test exp 5
@@ -56,7 +63,7 @@ expIsFound = false
       rescue
         puts "Exception!!! Exp_Id: #{i.exp_id}"
       end
-    end
+    end if !fast_exp.nil?
   end
 
 end
