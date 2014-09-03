@@ -7,42 +7,26 @@ require 'pp'
 #gem install http
 require "http"
 require 'thread'
-require File.absolute_path('./lib/FastCfg.rb')
-require File.absolute_path('./lib/FastExp.rb')
 
+# load config
+require File.absolute_path('./Lib/FastCfg.rb')
+require File.absolute_path('./Lib/FastExp.rb')
+
+
+#exit if ARGV.size < 1
+#domain = ARGV[0]
+def main(arg_type, arg_str)
+
+domain = arg_str
 # exploit type
-#exp_type = ["URL","DIR"]
-exp_type = ["URL","HOST","DIR"]
+#exp_type = ["URL","HOST","DIR"]
+exp_type = arg_type
 # exploits script
-exploits = Dir["./exp/*.rb"]
-
+exploits = Dir["./Exp/*.rb"]
 # load exploits
 exploits.each do |exp|
   require(exp)
 end
-
-=begin
-# execute exp
-FastCfg.list.each do |item|
-  begin
-  item.exp(exp_type,"www.discuz.net")
-  puts item if item.found?
-  rescue
-    puts "Exceptions... exp_id: #{item.exp_id}"
-  end
-end
-=end
-
-domain = "www.fastweb.com.cn"
-# test exp 2
-#domain = "www.discuz.net"
-# test exp 3
-#domain = "www.ytjt.com.cn"
-#domain = "test.jdyt.cn"
-# test exp 4 
-#domain = "www.zhhsw.com"
-# test exp 5
-#domain = "www.ueloo.com"
 
 thread_num = 4
 thread_list = []
@@ -50,23 +34,23 @@ expIsFound = false
 
 (0..thread_num).each do |n|
 
-  length = FastCfg.list.size / 3 if FastCfg.list.size != 0
-  fast_exp = FastCfg.list[n*length,length]
+  length = FastCfg.list.size / (thread_num - 1) if FastCfg.list.size != 0
+  exp_group = FastCfg.list[n*length,length]
 
   thread_list[n] = Thread.new do
     FastCfg.debug("Thread #{n} start...")
-    fast_exp.each do |i|
-      begin
+    exp_group.each do |i|
+        FastCfg.info "Start Exp: #{i.exp_id} #{i.exp_name}"
         i.exp(exp_type, domain)
-        FastCfg.debug "exp: #{i.exp_id} start..."
-        FastCfg.debug i if i.found? || expIsFound
-      rescue
-        puts "Exception!!! Exp_Id: #{i.exp_id}"
-      end
-    end if !fast_exp.nil?
+        FastCfg.debug i if i.found?
+        FastCfg.error i.error_info if i.error?
+        FastCfg.match i.match_info if i.found?
+    end if !exp_group.nil?
   end
 
 end
 
 thread_list.each do |t| t.join end
+end
 
+#main("HOST","localhost")

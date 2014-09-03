@@ -1,10 +1,11 @@
 require 'logger'
-require(File.absolute_path('./lib/FastExp.rb'))
+require(File.absolute_path('./Lib/FastExp.rb'))
 
 class FastCfg
 
   @@fast_exploit=[]
   @@logger = Logger.new(STDOUT)
+  @@logger.level = Logger::INFO
 
   def self.list
     @@fast_exploit
@@ -17,22 +18,19 @@ class FastCfg
   def initialize()
   end
 
-  def self.level()
-    @@logger.level = Logger::DEBUG
-  end
-
   def self.error(msg)
-    level()
-    @@logger.error msg
+    @@logger.error "\e[41m#{msg}\e[0m"
   end
 
   def self.debug(msg)
-    level()
-    @@logger.debug msg
+    @@logger.debug "\e[33m#{msg}\e[0m"
+  end
+
+  def self.match(msg)
+    @@logger.info "\e[32m#{msg}\e[0m"
   end
 
   def self.info(msg)
-    level()
     @@logger.info msg
   end
 

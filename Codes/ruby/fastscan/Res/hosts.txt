@@ -1,0 +1,12 @@
+admin
+manager
+password
+ad
+db
+login
+log
+mail
+net
+oa
+vpn
+web
