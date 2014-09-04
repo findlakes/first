@@ -1,0 +1,81 @@
+#
+# Class: Global
+#
+
+class Global
+
+	private_class_method :new
+
+	attr_accessor :first_uri
+	attr_accessor :ip
+	attr_accessor :host
+	attr_accessor :port
+	attr_accessor :user_agent
+	attr_accessor :set_cookie
+
+	@@instance = nil
+	@@logger = Logger.new(STDOUT)
+	@@logger.level = Logger::DEBUG
+
+	def initialize
+	end
+
+	def self.instance  
+		@@instance = new unless @@instance  
+	end
+
+	def to_s
+		"#{self.first_uri}, #{self.user_agent}, #{self.set_cookie}"
+	end
+
+	def error(msg)
+	  @@logger.error "\e[41m#{msg}\e[0m"
+	end 
+	
+	def debug(msg)
+	  @@logger.debug "\e[33m#{msg}\e[0m"
+	end 
+	
+	def warn(msg)
+		if msg.is_a?(Array) then
+			msg.each {|x| @@logger.warn "\e[32m#{x}\e[0m" }	
+		else
+			@@logger.warn "\e[32m#{msg}\e[0m"
+		end
+	end 
+	
+	def info(msg)
+	  @@logger.info msg 
+	end 
+
+	def check_env
+		global = @@instance
+		begin
+			global.first_uri = "http://" + global.first_uri unless global.first_uri.start_with?("http")
+			uri = URI(global.first_uri);
+			global.host = uri.host
+			global.port = uri.port
+			global.ip = Resolv.getaddress(uri.host)
+			global.ip = "127.0.0.1" if uri.host == "localhost"
+		
+			Detection.detect_server(global)
+		
+		rescue SocketError
+			global.error("SocketError Can't Connet to #{global.first_uri}")
+			exit
+		
+		rescue Resolv::ResolvError
+			global.error "ResolvError Can't Resolv #{global.host}"
+			exit
+		
+		rescue URI::InvalidURIError
+			global.error "InvalidURIError:  #{global.first_uri}"
+			exit
+		
+		rescue Errno::ECONNRESET
+			global.error "CONN RESET by peer:  #{global.ip}"
+			exit
+		end
+	end
+end
+
