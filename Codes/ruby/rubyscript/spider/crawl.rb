@@ -173,7 +173,8 @@ if $0 == __FILE__
     lino = 0
     Spider.new(ARGV[0], {:exclude_urls_with_images => true}).crawl({:threads => 1000}) do |response|
       lino += 1
-      #puts "#{lino} - #{response}"
+      puts "#{lino} - #{response}"
+=begin
 	  u = 'http://'+response+'/.git/config' if response
       print('.')
       r = Typhoeus.get(u) if u
@@ -181,5 +182,6 @@ if $0 == __FILE__
 		#p r.code
 	  puts u if r.body.include?('origin')
 	end
+=end
     end
 end
