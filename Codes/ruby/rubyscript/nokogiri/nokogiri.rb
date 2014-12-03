@@ -21,16 +21,6 @@ doc.search('//p/a', 'p > a').each do |a_tag|
   puts a_tag.content
 end
 
-a = doc.search( '//a[@href]' ).map { |a| a['href'] }
-p a.to_s
+tag = doc.search( '//a[@href]' ).map { |a| a['href'] }
+p tag.to_s
 
-10.times do |i|
-
-  page = "#{i}0"
-  doc = Nokogiri::HTML(open("http://www.baidu.com/s?wd=ceshi&pn=#{page}"))
-  doc.search('span.g').each do |link|
-    ret = link.content.scan(/(.*)\//)
-    puts ret
-  end
-
-end

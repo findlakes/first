@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<ad_loop>3</ad_loop>
+<ad_referer>59.188.71.162</ad_referer>
+<sites>
+	<site domain="ysw001.com">
+		<type>dianying</type>
+		<cpm>&lt;!--114lm--&gt;&lt;script type="text/javascript"&gt;u_a_client="2012";u_a_width="0";u_a_height="0";u_a_zones="1057";u_a_type="1";&lt;/script&gt;&#13;
+				&lt;!--cpm138--&gt;&lt;script src="http://www.2skb.com/i.js"&gt;&lt;/script&gt;</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>&lt;script type="text/javascript"&gt;&#13;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");&#13;
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc057306952f7d69c59b9533e83e5058c' type='text/javascript'%3E%3C/script%3E"));&#13;
+				&lt;/script&gt;</tj>
+	</site>
+	<site domain="ysxun.com">
+		<type>dianying</type>
+		<cpm/>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd3c87103edc37334d58ba101cbd021a9' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="178l.com">
+		<type>dianying</type>
+		<cpm>
+			
+				&lt;!--yiyilm--&gt;&lt;script src="http://www.yiyilm.com/page/?s=5176"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F08fa0ec0d3a4a4ee70f04465853c5120' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="10dyy.com">
+		<type>dianying</type>
+		<cpm>
+			
+				&lt;script src="http://js.centenr.net/page/?s=442075"&gt;&lt;/script&gt;
+				&lt;script src="http://tt.ad8.cc/page/?s=4268"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv>
+			
+				&lt;script src="http://js.centenr.net/page/?s=435596"&gt;&lt;/script&gt;
+				&lt;script src="http://tt.ad8.cc/page/?s=4269"&gt;&lt;/script&gt;
+			
+		</cpv>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3dbcbb7088cb6f479a6ec4592a9666be' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+				&lt;script&gt;
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				  ga('create', 'UA-43572078-1', '10dyy.com');
+				  ga('send', 'pageview');
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="dydw.cn">
+		<type>dianying</type>
+		<cpm>
+			
+				&lt;span style="display:none"&gt;
+				&lt;script src="http://j.77power.com/i.php?z=83240"&gt;&lt;/script&gt;
+				&lt;script src="http://js.centenr.net/page/?s=442003"&gt;&lt;/script&gt;
+				&lt;/span&gt;
+			
+		</cpm>
+		<cpv>
+			
+				&lt;script src="http://js.centenr.net/page/?s=440055"&gt;&lt;/script&gt;
+				&lt;script src="http://j.77power.com/adscpv/i.php?z=83241"&gt;&lt;/script&gt;
+			
+		</cpv>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb86df608a37014c9de9cf436f0c994e4' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+				&lt;script&gt;
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				  ga('create', 'UA-43572078-2', 'dydw.cn');
+				  ga('send', 'pageview');
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="jdyt.cn">
+		<type>dianying</type>
+		<cpm>
+			
+				&lt;script src="http://js.centenr.net/page/?s=443294"&gt;&lt;/script&gt;
+				&lt;script type="text/javascript"&gt;
+				 u_a_client="1821";
+				 u_a_width="0";
+				 u_a_height="0";
+				 u_a_zones="836";
+				 u_a_type="1"
+				&lt;/script&gt;
+				&lt;script src="http://www.2skb.com/i.js"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv>
+			
+				&lt;script src="http://js.centenr.net/page/?s=443295"&gt;&lt;/script&gt;
+			
+		</cpv>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F233a3aa8ac444a27a536d966a7567eec' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="178f.com">
+		<type>dianying</type>
+		<cpm>
+			
+				&lt;!--script src="http://js.centenr.com/page/?s=460756"&gt;&lt;/script--&gt;
+				&lt;script src="http://www.yiyilm.com/page/?s=79"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv>
+			
+				&lt;!--script src="http://js.centenr.com/page/?s=460736"&gt;&lt;/script--&gt;
+				&lt;script src="http://www.yiyilm.com/page/?s=80"&gt;&lt;/script&gt;
+			
+		</cpv>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F66e1dbe0c8d597875ba7eff7cc4fc286' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+				&lt;script&gt;
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				  ga('create', 'UA-43572078-4', '178f.com');
+				  ga('send', 'pageview');
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="2dyw.com">
+		<type>dianying</type>
+		<cpm>
+			
+				&lt;script src="http://js.centenr.net/page/?s=441911"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv>
+			
+				&lt;script src="http://js.centenr.net/page/?s=448572"&gt;&lt;/script&gt;
+			
+		</cpv>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F51112474747df3ce6a80e632e380467b' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+				&lt;script&gt;
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				  ga('create', 'UA-43572078-3', '2dyw.com');
+				  ga('send', 'pageview');
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="51haody.com">
+		<type>dianying</type>
+		<cpm>
+			
+				&lt;script type="text/javascript"&gt;
+				 u_a_client="1821";
+				 u_a_width="0";
+				 u_a_height="0";
+				 u_a_zones="957";
+				 u_a_type="1"
+				&lt;/script&gt;
+				&lt;script src="http://www.2skb.com/i.js"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F70993e6b5de4a3b92a58ffeb8c89fc94' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="xszgw.com">
+		<type>xiaoshuo</type>
+		<cpm>
+			
+				&lt;script src="http://js.yimeiads.com/page/?s=34694"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff7e775049efccde69691782572c03a5f' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="179i.com">
+		<type>xiaoshuo</type>
+		<cpm>
+			
+				&lt;script type="text/javascript"&gt;
+				 u_a_client="1821";
+				 u_a_width="0";
+				 u_a_height="0";
+				 u_a_zones="988";
+				 u_a_type="1"
+				&lt;/script&gt;
+				&lt;script src="http://www.2skb.com/i.js"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6690ee6b423ade1b3c848288f2889737' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="gi123.com">
+		<type>shouji</type>	
+		<cpm>
+			
+				&lt;!--114lm--&gt;&lt;script type="text/javascript"&gt; u_a_client="1821"; u_a_width="0"; u_a_height="0"; u_a_zones="986"; u_a_type="1"&lt;/script&gt;
+				&lt;!--cpm138--&gt;&lt;script src="http://www.2skb.com/i.js"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9c898251a2d47e2ca9eae44ac9370bb7' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="22shouji.com">
+		<type>shouji</type>
+		<cpm>
+			
+				&lt;!--yimeiads--&gt;&lt;script src="http://js.yimeiads.com/page/?s=34693"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F93e8a132c2c931a140f6981c8ce221a6' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="wanwana.com">
+		<type>shouji</type>
+		<cpm>
+			
+				&lt;script type="text/javascript"&gt;
+				 u_a_client="1961";
+				 u_a_width="0";
+				 u_a_height="0";
+				 u_a_zones="994";
+				 u_a_type="1"
+				&lt;/script&gt;
+				&lt;script src="http://www.2skb.com/i.js"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv/>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8c29b2764a24eb7339200cbd9fe286d3' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+	<site domain="baidubl.com">
+		<type>shouji</type>
+		<cpm>
+			
+				&lt;script src="http://tt.ad8.cc/page/?s=4530"&gt;&lt;/script&gt;
+			
+		</cpm>
+		<cpv>
+			
+				&lt;script src="http://tt.ad8.cc/page/?s=4531"&gt;&lt;/script&gt;
+			
+		</cpv>
+		<cpc/>
+		<tj>
+			
+				&lt;script type="text/javascript"&gt;
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0837ec7489e661c9f7bf1bcca82885b9' type='text/javascript'%3E%3C/script%3E"));
+				&lt;/script&gt;
+			
+		</tj>
+	</site>
+</sites>
+</root>
