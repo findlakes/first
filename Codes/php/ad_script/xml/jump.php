@@ -1,9 +1,32 @@
 <?php
 
+function get_xml(){
+	$config  = dirname(__FILE__).'/data.xml';
+	$xmldata = simplexml_load_file($config,'SimpleXMLElement',LIBXML_NOCDATA);
+	return $xmldata;
+}
+
+//function for memchache
+function cache(){
+	$memcache_obj = new Memcache;
+	$memcache_obj->connect('127.0.0.1', 11211);
+	$xmlcache = $memcache_obj->get('xmlcache');
+	if($xmlcache){
+		return simplexml_load_string($xmlcache);
+	}else{
+		$xmldata = get_xml();
+		$memcache_obj->add('xmlcache', $xmldata->asXML(), false, 5);
+		return $xmldata;
+	}
+}
+
 //xml info.
-$config  = dirname(__FILE__).'/data.xml';
-$xmltype = 'SimpleXMLElement';
-$xmldata = simplexml_load_file($config,$xmltype,LIBXML_NOCDATA);        //读取xml文件
+if(true){
+$xmldata = get_xml();
+}else{
+$xmldata = cache();
+}
+
 
 //Read config data.
 $ad_loop    = intval($xmldata->ad_loop);

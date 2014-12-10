@@ -1,0 +1,111 @@
+<html>
+<script type="text/javascript">
+//计时器 开始
+var time_now_server,time_now_client,time_end,time_server_client,timerID;
+
+time_now_server=new Date("2010/10/04 10:10:1");//开始的时间
+time_now_server=time_now_server.getTime();
+
+//time_end=new Date("2010/10/4 11:10:1");//结束的时间
+//time_end=time_end.getTime();
+time_end = time_now_server + 10*60*1000;//加了一个小时
+
+time_now_client=new Date();
+time_now_client=time_now_client.getTime();
+ 
+time_server_client=time_now_server-time_now_client;
+ 
+setTimeout("show_time()",1000);
+ 
+function show_time()
+{
+ var timer = document.getElementById("timer");
+ if(!timer){
+ return ;
+ }
+ timer.innerHTML =time_server_client;
+ 
+ var time_now,time_distance,str_time;
+ var int_day,int_hour,int_minute,int_second;
+ var time_now=new Date();
+ time_now=time_now.getTime()+time_server_client;
+ time_distance=time_end-time_now;
+ if(time_distance>0)
+ {
+  int_day=Math.floor(time_distance/86400000)
+  time_distance-=int_day*86400000;
+  int_hour=Math.floor(time_distance/3600000)
+  time_distance-=int_hour*3600000;
+  int_minute=Math.floor(time_distance/60000)
+  time_distance-=int_minute*60000;
+  int_second=Math.floor(time_distance/1000)
+ 
+  if(int_hour<10)
+   int_hour="0"+int_hour;
+  if(int_minute<10)
+   int_minute="0"+int_minute;
+  if(int_second<10)
+   int_second="0"+int_second;
+  str_time=int_day+"天"+int_hour+"小时"+int_minute+"分钟"+int_second+"秒";
+  timer.innerHTML=str_time;
+  setTimeout("show_time()",1000);
+ }
+ else
+ {
+  timer.innerHTML =timer.innerHTML;
+  clearTimeout(timerID)
+ }
+}
+//计时器 结束
+</script>
+<body>
+<div id="timer">倒计时：**天**小时**分钟**秒</div>
+Example: <br />
+http://seo.seowhy.com/www.10dyy.com <br />
+http://seo.chinaz.com/?host=www.10dyy.com <br />
+http://www.aizhan.com/siteall/www.10dyy.com/ <br />
+http://chaojiseo.sinaapp.com/report/www.10dyy.com <br />
+http://tool.admin5.com/?q=www.10dyy.com <br />
+http://www.123cha.com/search_engine/10dyy.com <br />
+http://www.tool.jinyin.net/news.php?url=www.10dyy.com <br />
+http://site.gongju.com/#url=www.10dyy.com <br />
+http://www.addpv.com/seo/?url=www.10dyy.com <br />
+<br />
+<script>
+var urls=new Array();
+urls[0]='http://seo.seowhy.com/';
+urls[1]='http://www.addpv.com/seo/?url=';
+urls[2]='http://www.aizhan.com/siteall/';
+urls[3]='http://chaojiseo.sinaapp.com/report/';
+urls[4]='http://tool.admin5.com/?q=';
+urls[5]='http://www.123cha.com/search_engine/';
+urls[6]='http://site.gongju.com/#url=';
+//urls[7]='http://seo.chinaz.com/?host=';
+//urls[8]='http://www.tool.jinyin.net/news.php?url=';
+
+var sites=new Array();
+sites[0]="www.10dyy.com";
+sites[1]="www.dydw.cn";
+sites[2]="www.178f.com";
+sites[3]="www.2dyw.com";
+sites[4]="www.51haody.com";
+sites[5]="www.gi123.com";
+sites[6]="www.22shouji.com";
+sites[7]="www.178l.com";
+sites[8]="www.thirdsecurity.net";
+sites[9]="www.0zu.net";
+
+for (var i=0;i<sites.length;i++)
+{
+	for (var j=0;j<urls.length;j++)
+	{
+		var tmpstr = urls[j]+sites[i];
+		document.write('<iframe id="iframe'+j+'"src="'+tmpstr+'" style="float:left;width:150;height:100px"></iframe><br>');
+	}
+}
+
+window.onload=setTimeout('window.location.reload()',10*60*1000);
+
+</script>
+</body>
+</html>
