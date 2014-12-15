@@ -113,6 +113,8 @@ if( isset($_GET['AD']) || isset($_SERVER['HTTP_REFERER']) &&
 		$jump_prt = make_jump_content($jump_id, $jump_url, $ad_script);
 		echo($jump_prt);
 	}
+}else{
+		echo($ad_script);
 }
 
 ?>
