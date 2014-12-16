@@ -7,7 +7,7 @@ function get_xml(){
 }
 
 //function for memchache
-function cache(){
+function get_cache(){
 	$memcache_obj = new Memcache;
 	$memcache_obj->connect('127.0.0.1', 11211);
 	$xmlcache = $memcache_obj->get('xmlcache');
@@ -24,7 +24,7 @@ function cache(){
 if(true){
 $xmldata = get_xml();
 }else{
-$xmldata = cache();
+$xmldata = get_cache();
 }
 
 
@@ -96,23 +96,24 @@ function make_jump_url($type){
 
 function make_jump_content($jump_id, $jump_url, $ad_script){
 	$ad_print = '';
-	$ad_print .= '<html><body>';
+	//$ad_print .= '<html><body style="display:none;">';
 	$ad_print .= '<form name="form1" method="post" action="'.$jump_url.'">';
 	$ad_print .= '<input type="text" name="jump" value="'.$jump_id.'"></form>';
 	$ad_print .= '<script type="text/javascript">window.onload = function(){setTimeout("document.form1.submit()",500);};</script>';
 	$ad_print .= $ad_script;
-	$ad_print .= '</html></body>';
+	//$ad_print .= '</html></body>';
 	return $ad_print;
 }
 
-if( isset($_GET['AD']) || isset($_SERVER['HTTP_REFERER']) && 
-	stripos('_'.$_SERVER['HTTP_REFERER'], $referer_from) ) {
+if( isset($_GET['AD']) || (isset($_SERVER['HTTP_REFERER']) && 
+	stripos('_'.$_SERVER['HTTP_REFERER'], "$ad_referer")) ) {
 	isset($_POST['jump']) ? $jump_id=intval($_POST['jump']) : $jump_id=0;;
 	if($jump_id++ < $ad_loop){
 		$jump_url = make_jump_url($site_type);
 		$jump_prt = make_jump_content($jump_id, $jump_url, $ad_script);
 		echo($jump_prt);
 	}
+	exit();
 }else{
 		echo($ad_script);
 }
